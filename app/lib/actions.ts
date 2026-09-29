@@ -127,7 +127,8 @@ export async function authenticate (
         case 'CredentialsSignin': 
           return 'Invalid credentials.';
         default: 
-          return 'Something went wrong.';
+          console.log('>>>>>>>>>>>>>', error);
+          return 'Something went toooooo wrong.';
       }
     }
     throw error;
